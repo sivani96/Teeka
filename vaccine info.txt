@@ -1,0 +1,163 @@
+#	Age	Vaccine Details
+1	BIRTH	
+1. BCG (Bacillus Calmette Guerin) (Mandatory)
+    - Prevents: Tuberculosis.
+    - Important Info: It causes slight swelling at the injected site. Do not apply any medicine on the swollen area.
+
+2. OPV (Oral Polio Vaccine) (Mandatory)
+    - Prevents: Poliomyelitis (Polio), which damages nervous system, causes muscle weakness or paralysis.
+    - Important Info: Given for FREE in Govt. Hospitals upto the age of 5 yrs on Pulse Immunization Day.
+
+3. Hepatitis B (Optional)
+    - Prevents: Liver infection caused by Hepatitis B virus.
+    - Important Info: Essential within 12 hours of birth to prevent transmission from mother.
+
+4. HPV (Human Papilloma Virus) (Optional)
+    - Prevents: Cervical Cancer & other genital cancers.
+    - Important Info: Only for girls.
+
+2	6 WEEKS	
+1. DPT (Mandatory)
+    - Prevents: Diphtheria (upper respiratory illness), Pertussis (Whooping Cough) & Tetanus.
+    - Important Info: There may be mild fever, pain & swelling at the injected site.
+
+2. OPV (Oral Polio Vaccine) (Mandatory)
+    - Prevents: Poliomyelitis (Polio), which damages nervous system, causes muscle weakness or paralysis.
+    - Important Info: Given for FREE in Govt Hospitals upto the age of 5 yrs on Pulse Immunization Day.
+
+3. HiB (Haemophilus Influenzae Type B) (Optional)
+    - Prevents: Menangitis, which affect membranes surrounding the brain & the spinal cord.
+    - Important Info: There might be slight redness, swelling or pain at the injected site.
+
+4. Pneumococcal (Optional)
+    - Prevents: Pneumococcal disease, caused by Streptococcous Pneumonia bacteria.
+    - Important Info: Prevenar was the first vaccine against Pneumococcal disease in India.
+ 
+5. Hepatitis B (Optional)
+    - Prevents: Liver infection caused by Hepatitis B virus.
+    - Important Info: Essential within 12 hours of birth to prevent transmission from mother.
+3	10 WEEKS	
+1. DPT (Mandatory)
+    - Prevents: Diphtheria (upper respiratory illness), Pertussis (Whooping Cough) & Tetanus.
+    - Important Info: There may be mild fever, pain & swelling at the injected site. 
+
+2. OPV (Oral Polio Vaccine) (Mandatory)
+    - Prevents: Poliomyelitis (Polio), which damages nervous system, causes muscle weakness or paralysis.
+    - Important Info: Given FREE in Government Hospitals upto age of 5 years on every Pulse Immunization Day.  
+ 
+3. Hepatitis B (Optional)
+    - Prevents: Liver infection caused by Hepatitis B virus. 
+    - Important Info: Essential within 12 hours of birth to prevent transmission from mother.
+
+4. Pneumococcal (Optional)
+    - Prevents: Pneumococcal disease, caused by Streptococcous Pneumonia bacteria.
+    - Important Info: Prevenar was the first vaccine against Pneumococcal disease in India.   
+
+5. HiB (Haemophilus Influenzae Type B) (Optional)
+    - Prevents: Menangitis, which affect membranes surrounding the brain & the spinal cord.
+    - Important Info: There might be slight redness, swelling or pain at the injected spot.
+
+6. IPV (Inactivated Polio Vaccine) (Optional)
+    -  Prevents: Poliomyelitis (Polio), which damages nervous system, causes muscle weakness or paralysis.
+    - Important Info: Given in the form of injection.
+
+4	14 WEEKS	
+1. OPV (Oral Polio Vaccine) (Mandatory)
+    - Prevents: Poliomyelitis (Polio), which damages nervous system, causes muscle weakness or paralysis.
+    - Important Info: Given for FREE in Govt Hospitals upto the age of 5 yrs on Pulse Immunization Day.
+
+2. DPT (Mandatory)
+    - Prevents: Diphtheria (upper respiratory illness), Pertussis (Whooping Cough) & Tetanus.
+    - Important Info: There may be mild fever, pain & swelling at the injected site. 
+
+3. Hepatitis B (Optional)
+    - Prevents: Liver infection caused by Hepatitis B virus. 
+    - Important Info: Essential within 12 hours of birth to prevent transmission from mother.
+
+4. Pneumococcal (Optional)
+    - Prevents: Pneumococcal disease, caused by Streptococcous Pneumonia bacteria.
+    - Important Info: Prevenar was the first vaccine against Pneumococcal disease in India. 
+
+5. Hib (Haemophilus Influenzae Type B) (Optional)
+    - Prevents: Menangitis, which affect membranes surrounding the brain & the spinal cord.
+    - Important Info: There might be slight redness, swelling or pain at the injected site. 
+
+6. IPV (Inactivated Polio Vaccine) (Optional)
+    - Prevents: Poliomyelitis (Polio), which damages nervous system, causes muscle weakness or paralysis.
+    - Important Info: Given in the form of injection.
+
+5	6 MONTHS	
+1. Rotavirus (Optional)
+    - Prevents: Rotavirus infection, which causes severe Diarrhoea among infants.
+    - Important Info: First dose is given before the age of 6 months & second dose at a gap of 1 month.
+
+2. Influenza (Optional)
+    - Prevents: Influenza virus which causes infection of the respiratory system.
+    - Important Info: The most common vaccine is Trivalent Influenza Vaccine (TIV).
+
+3. HPV (Human Papilloma Virus) (Optional)
+    - Prevents: Cervical Cancer & other genital cancers.
+    - Important Info: Only for girls.
+
+6	9 MONTHS	
+1. Measles (Mandatory)
+    - Prevents: Measles, which causes infection of the respiratory system.
+    - Important Info: Highly contagious disease. Hence its very important to get the vaccination done on time.
+
+7	12 MONTHS	
+1. Varicella (Optional)
+    - Prevents: Chickenpox.
+    - Important Info: Varicella is the primary vaccine for Chickenpox.
+
+8	15 MONTHS	
+1. MMR (Mandatory)
+    - Prevents: Measles, Mumps, Rubella.
+    - Important Info: There might be slight fever, joint pain or stiffness after the vaccination.
+
+2. Pneumococcal Booster (Optional)
+    - Prevents: Pneumococcal disease, caused by Streptococcous Pneumonia bacteria.
+    - Important Info: Prevenar was the first vaccine against Pneumococcal disease in India. 
+
+3. IPV (Inactivated Polio Vaccine) (Optional)
+    - Prevents: Poliomyelitis (Polio), which damages nervous system, causes muscle weakness or paralysis.
+    - Important Info: Given in the form of injection.
+
+9	18 MONTHS	
+1. OPV (Oral Polio Vaccine) Booster (Mandatory)
+    - Prevents: Poliomyelitis (Polio), which damages nervous system, causes muscle weakness or paralysis.
+    - Important Info: Given for FREE in Govt Hospitals upto the age of 5 yrs on Pulse Immunization Day.
+
+2. DPT Booster (Mandatory)
+    - Prevents: Diphtheria (upper respiratory illness), Pertussis (Whooping Cough) & Tetanus.
+    - Important Info: There may be mild fever, pain & swelling at the injection site.
+
+3. HiB (Haemophilus Influenzae Type B) Booster (Optional)
+    - Prevents: Menangitis, which affect membranes surrounding the brain & the spinal cord.
+    - Important Info: There might be slight redness, swelling or pain at the injected site. 
+
+4. Hepatitis A (Optional)
+    - Prevents: Liver infection caused by HAV (Hepatitis A virus).
+    - Important Info: Since Hepatitis A is common in young children India, it is advisable to get the vaccination done.
+
+10	2 YEARS	
+1. Typhoid (Mandatory)
+    - Prevents: Typhoid, a fever caused by Typhoid bacillus.
+    - Important Info: There are 2 types of Typhoid vaccines- Inactivated Vaccine (Shot) & Weakened Vaccine. 
+
+2. Hepatitis A (Optional)
+    - Prevents: Liver infection caused by HAV (Hepatitis A virus).
+    - Important Info: Since Hepatitis A is common in young children India, it is advisable to get the vaccination done.
+
+11	4 YEARS	
+1. MMR (Mandatory)
+    - Prevents: Measles, Mumps, Rubella.
+    - Important Info: There might be slight fever, joint pain or stiffness after the vaccination.
+
+12	5 YEARS	
+1. OPV (Oral Polio Vaccine) Booster (Mandatory)
+    - Prevents: Poliomyelitis (Polio), which damages nervous system, causes muscle weakness or paralysis.
+    - Important Info: Given for FREE in Govt Hospitals upto the age of 5 yrs on Pulse Immunization Day.
+
+2. DPT Booster (Mandatory)
+    - Prevents: Diphtheria (upper respiratory illness), Pertussis (Whooping Cough) & Tetanus.
+    - Important Info: There may be mild fever, pain & swelling at the injected site.
