@@ -57,27 +57,31 @@
 	</div><!--  bluewrap -->
 
 
-    <center style="margin-left: 40px">
-&nbsp;
-    <asp:Label ID="Label2" runat="server" Text="Username:  "></asp:Label>
-    <asp:TextBox ID="TextBox1" runat="server" Height="30px" Width="142px"></asp:TextBox>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+    <center>
+    <table cellspacing="20%" cellpadding="10%">
+    <tr><td><asp:Label ID="Label2" runat="server" Text="Username  "></asp:Label></td>
+    <td><asp:TextBox ID="TextBox1" runat="server" Height="30px" Width="142px"></asp:TextBox></td>
+      <td>  <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
             ControlToValidate="TextBox1" ErrorMessage="enter valid username" 
-            ValidationExpression="\w+"></asp:RegularExpressionValidator>
-        <br />
-    <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label3" runat="server" Text="Password:   "></asp:Label>
-    <asp:TextBox ID="TextBox2" runat="server" Height="30px" Width="135px" 
-            TextMode="Password"></asp:TextBox>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" 
+            ValidationExpression="\w+"></asp:RegularExpressionValidator></td></tr>
+    
+    <tr><td><asp:Label ID="Label3" runat="server" Text="Password  "></asp:Label></td>
+    <td><asp:TextBox ID="TextBox2" runat="server" Height="30px" Width="141px" 
+            TextMode="Password"></asp:TextBox></td>
+       <td> <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" 
             ControlToValidate="TextBox2" ErrorMessage="Special charecters are not allowed" 
-            ValidationExpression="\w+\d*"></asp:RegularExpressionValidator>
-        <br />
-        <br />
-        <br />
-        <br />
-        <asp:Button ID="Button1" runat="server" Text="Submit" />
+            ValidationExpression="\w+\d*"></asp:RegularExpressionValidator></td></tr>
+      </table>  
+      </center> <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="Button1" runat="server" Text="Submit" />
+ 
     </center>
       </form>
     </div>
