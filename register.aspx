@@ -22,7 +22,6 @@
 
 <body>
 <div>
-    <form id="form3" runat="server">
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -56,74 +55,65 @@
 	</div><!--  bluewrap -->
     
     </div>
- 
-    
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- 
-    
-
-&nbsp;<p>
-        &nbsp;</p>
-    <p>
-        &nbsp;</p><center>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label2" runat="server" Text="Username:  "></asp:Label>
-    <asp:TextBox ID="TextBox1" runat="server" Height="30px" Width="142px"></asp:TextBox>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
+    <form id="form3" runat="server">
+    <center> <br>
+    <table cellpadding="10%" cellspacing="20%">
+   <tr><td> <asp:Label ID="Label2" runat="server" Text="Username "></asp:Label></td>
+   <td> <asp:TextBox ID="TextBox1" runat="server" Height="30px" Width="148px"></asp:TextBox></td>
+       <td>  <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
             ControlToValidate="TextBox1" ErrorMessage="enter valid username" 
             ValidationExpression="\w+\d*" Display="Dynamic"></asp:RegularExpressionValidator>
+
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
-            ControlToValidate="TextBox1" Display="Dynamic" ErrorMessage="Enter username"></asp:RequiredFieldValidator>
-        <br />
-    <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label3" runat="server" Text="Password:   "></asp:Label>
-    <asp:TextBox ID="TextBox2" runat="server" Height="30px" Width="135px" 
-            TextMode="Password"></asp:TextBox>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" 
+            ControlToValidate="TextBox1" Display="Dynamic" ErrorMessage="Enter username"></asp:RequiredFieldValidator></td></tr>
+   
+    <tr><td><asp:Label ID="Label3" runat="server" Text="Password "></asp:Label></td>
+   <td> 
+       <asp:TextBox ID="TextBox2" runat="server" Height="30px" Width="148px" 
+            TextMode="Password"></asp:TextBox></td>
+       <td> <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" 
             ControlToValidate="TextBox2" ErrorMessage="Special charecters are not allowed" 
             ValidationExpression="\w+\d*"></asp:RegularExpressionValidator>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
-            ControlToValidate="TextBox2" Display="Dynamic" ErrorMessage="Enter Password"></asp:RequiredFieldValidator>
-        <br />
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Label ID="Label4" runat="server" Text="Email: "></asp:Label>
-        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" 
+            ControlToValidate="TextBox2" Display="Dynamic" ErrorMessage="Enter Password"></asp:RequiredFieldValidator></td></tr>
+        
+      <tr><td>  <asp:Label ID="Label4" runat="server" Text="Email"></asp:Label></td>
+      <td>   <asp:TextBox ID="TextBox3" runat="server" Width="148px"></asp:TextBox></td>
+        <td> <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" 
             ControlToValidate="TextBox3" Display="Dynamic" 
             ErrorMessage="Enter valid email address" 
             ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" 
-            ControlToValidate="TextBox3" Display="Dynamic" ErrorMessage="Enter email id"></asp:RequiredFieldValidator>
-        <br />
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label5" runat="server" Text="Contact number:"></asp:Label>
-        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-&nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" 
+            ControlToValidate="TextBox3" Display="Dynamic" ErrorMessage="Enter email id"></asp:RequiredFieldValidator></td></tr>
+
+       <tr><td>  <asp:Label ID="Label5" runat="server" Text="Contact number"></asp:Label></td>
+        <td><asp:TextBox ID="TextBox4" runat="server" Width="148px"></asp:TextBox></td>
+        <td><asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" 
             ControlToValidate="TextBox4" Display="Dynamic" 
             ErrorMessage="Enter valid phone number" ValidationExpression="\d{10}"></asp:RegularExpressionValidator>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
+       <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
             ControlToValidate="TextBox4" Display="Dynamic" 
-            ErrorMessage="enter contact number"></asp:RequiredFieldValidator>
-        <br />
-        <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Label ID="Label6" runat="server" Text="DOB: "></asp:Label>
-        <asp:TextBox ID="TextBox5" runat="server" type="date" />
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
-        ControlToValidate="TextBox5" Display="Dynamic" ErrorMessage="Enter dob"></asp:RequiredFieldValidator>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br />
-        <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+            ErrorMessage="enter contact number"></asp:RequiredFieldValidator></td></tr>
+        
+       <tr><td>  <asp:Label ID="Label6" runat="server" Text="DOB"></asp:Label></td>
+         <td><asp:TextBox ID="TextBox5" runat="server" type="date" Width="148px" /></td>
+         <td><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+        ControlToValidate="TextBox5" Display="Dynamic" ErrorMessage="Enter dob"></asp:RequiredFieldValidator></td></tr>
+    
+       <tr><td>  <asp:RadioButtonList ID="RadioButtonList1" runat="server">
             <asp:ListItem Value="M">Male</asp:ListItem>
             <asp:ListItem Value="F">Female</asp:ListItem>
-        </asp:RadioButtonList>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
-            ControlToValidate="RadioButtonList1" ErrorMessage="Enter gender"></asp:RequiredFieldValidator>
+        </asp:RadioButtonList></td>
+        <td><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+            ControlToValidate="RadioButtonList1" ErrorMessage="Enter gender"></asp:RequiredFieldValidator></td></tr>
+    </table></center>
         <br />
-        &nbsp;<asp:Button ID="Button1" runat="server" Text="Submit" /></center>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button1" runat="server" Text="Submit" />
     
     </form>
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
