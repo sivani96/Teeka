@@ -22,7 +22,7 @@
 
 <body>
 <div>
-    <form id="form2" runat="server">
+    
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -56,29 +56,38 @@
 			</div><!-- row -->
 		</div><!-- container -->
 	</div><!--  bluewrap -->
-   <center>
-     Username : USER
-       <br />
-       Email id : &nbsp;&nbsp;
-       <asp:TextBox ID="TextBox4" runat="server" ReadOnly="True">user@abc.com</asp:TextBox>
-       <asp:Button ID="Button1" runat="server" Text="Change" />
-       <br />
-       Phone number :
-       <asp:TextBox ID="TextBox5" runat="server" ReadOnly="True">9999999999</asp:TextBox>
-&nbsp;<asp:Button ID="Button2" runat="server" Text="Change" />
-       <br />
-       Height (cms) :
-       <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-       <br />
-       Weight 
-       (kgs) :
-       <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-       <br />
-       Any other information:&nbsp;
-       <asp:TextBox ID="TextBox3" runat="server" Height="48px" Width="149px"></asp:TextBox>
-       <br />
+   <form id="form2" runat="server">
+    <center>
+    <table cellpadding="10%" cellspacing="20%">
+    <tr><td>Username  USER</td></tr>
+      
+      <tr><td> Email id</td>
+      <td> <asp:TextBox ID="TextBox4" runat="server" ReadOnly="True">user@abc.com</asp:TextBox> </td>
+      <td> <asp:Button ID="Button1" runat="server" Text="Change" /></td></tr>
+ 
+      <tr><td> Phone number </td>
+      <td> <asp:TextBox ID="TextBox5" runat="server" ReadOnly="True">9999999999</asp:TextBox></td>
+      <td> <asp:Button ID="Button2" runat="server" Text="Change" /></td></tr>
+ 
+       <tr><td>Height (cms) </td>
+       <td><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td></tr>
+       
+       <tr><td>Weight (kgs) </td>
+       <td><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td></tr>
+       
+       <tr><td>Any other information</td>
+       <td><asp:TextBox ID="TextBox3" runat="server" Height="48px" Width="148px"></asp:TextBox></td></tr>
+       </table></center><br />
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
        <asp:Button ID="Button3" runat="server" Text="DONE!" />
-     </center>
+     
     </form>
      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
