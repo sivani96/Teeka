@@ -22,6 +22,7 @@
 
 <body>
 <div>
+    <form id="form3" runat="server">
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -30,14 +31,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button><h1>
-            <a href="#">TEEKA</a></h1>
+            <img src="assets/img/icon-vaccine.png" height="15%" width="15%" /><a href="#">TEEKA</a></h1>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="home.aspx">HOME</a></li>
+            <li><a href="index.aspx">HOME</a></li>
             <li><a href="login.aspx">LOGIN</a></li>
-            <li><a href="register.aspx">REGISTER</a></li>
-            <li><a href="#">VACCINE INFORMATION</a></li>
+            <li class="active"><a href="register.aspx">REGISTER</a></li>
+            <li><a href="info.aspx">VACCINE INFORMATION</a></li>
             <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -55,7 +56,7 @@
 	</div><!--  bluewrap -->
     
     </div>
-    <form id="form3" runat="server">
+ 
     <center> <br>
     <table cellpadding="10%" cellspacing="20%">
    <tr><td> <asp:Label ID="Label2" runat="server" Text="Username "></asp:Label></td>

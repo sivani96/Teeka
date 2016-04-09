@@ -36,7 +36,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="home.aspx">HOME</a></li>
+            <li><a href="index.aspx">HOME</a></li>
             <li class="active"><a href="login.aspx">LOGIN</a></li>
             <li><a href="register.aspx">REGISTER</a></li>
             <li><a href="info.aspx">VACCINE INFORMATION</a></li>

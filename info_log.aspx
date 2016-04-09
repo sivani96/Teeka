@@ -1,4 +1,5 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="info.aspx.vb" Inherits="info" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="info_log.aspx.vb" Inherits="info_log" %>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,10 +42,12 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="home.aspx">HOME</a></li>
-            <li><a href="login.aspx">LOGIN</a></li>
-            <li><a href="register.aspx">REGISTER</a></li>
-            <li class="active"><a href="info.aspx">VACCINE INFORMATION</a></li>
+            <li><a href="report.aspx">REPORT</a></li>
+            <li><a href="userprofile.aspx">PROFILE</a></li>
+            <li class="active"><a href="info_log.aspx">VACCINE INFORMATION</a></li>
+            <li><a href="star.aspx">STAR BABY</a></li>
+            <li><a href="#">DASHBOARD</a></li>
+            <li><a href="logout.aspx">LOGOUT</a></li>
             <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
           </ul>
         </div><!--/.nav-collapse -->

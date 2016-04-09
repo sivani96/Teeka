@@ -1,8 +1,9 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="userprofile.aspx.vb" Inherits="userprofile" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="star.aspx.vb" Inherits="star" %>
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <title>TEEKA</title>
 
     <!-- Bootstrap core CSS -->
@@ -36,9 +37,9 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="report.aspx">REPORT</a></li>
-            <li class="active"><a href="userprofile.aspx">PROFILE</a></li>
-            <li><a href="info_log.aspx">VACCINE INFORMATION</a></li>
-            <li><a href="star.aspx">STAR BABY</a></li>
+            <li><a href="userprofile.aspx">PROFILE</a></li>
+            <li><a href="info_lof.aspx">VACCINE INFORMATION</a></li>
+            <li class="active"><a href="star.aspx">STAR BABY</a></li>
             <li><a href="dashboard.aspx">DASHBOARD</a></li>
             <li><a href="logout.aspx">LOGOUT</a></li>
             <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
@@ -51,46 +52,27 @@
 		<div class="container">
 			<div class="row centered">
 				<div class="col-lg-8 col-lg-offset-2">
-				<h3 align="center">PROFILE</h3>
+				<h3 align="center">STAR BABY</h3>
 				</div>
 			</div><!-- row -->
 		</div><!-- container -->
 	</div><!--  bluewrap -->
-   <center>
-    <table cellpadding="10%" cellspacing="20%">
-    <tr><td>Welcome
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-&nbsp;!</td></tr>
-      
-      <tr><td> Email id</td>
-      <td> <asp:TextBox ID="TextBox4" runat="server" ReadOnly="True"></asp:TextBox> </td>
-      <td> <asp:Button ID="Button1" runat="server" Text="Change" /></td></tr>
- 
-      <tr><td> Phone number </td>
-      <td> <asp:TextBox ID="TextBox5" runat="server" ReadOnly="True"></asp:TextBox></td>
-      <td> <asp:Button ID="Button2" runat="server" Text="Change" /></td></tr>
- 
-       <tr><td>Height (cms) </td>
-       <td><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td></tr>
-       
-       <tr><td>Weight (kgs) </td>
-       <td><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td></tr>
-       
-       <tr><td>Any other information</td>
-       <td><asp:TextBox ID="TextBox3" runat="server" Height="48px" Width="148px"></asp:TextBox></td></tr>
-       </table></center><br />
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       <asp:Button ID="Button3" runat="server" Text="DONE!" />
-       </center>
-    </form>
-     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   
+
+ <center><h2>Your baby's rating!</h2>
+     <p>&nbsp;</p>
+     <p>
+         <asp:Label ID="Label1" runat="server"></asp:Label>
+         <i class="fa fa-star" style="color: #C0C0C0" ID="star1" runat="server"></i>
+         <i class="fa fa-star" style="color: #C0C0C0" ID="star2" runat="server"></i>
+         <i class="fa fa-star" style="color: #C0C0C0" ID="star3" runat="server"></i>
+         <i class="fa fa-star" style="color: #C0C0C0" ID="star4" runat="server"></i>
+         <i class="fa fa-star" style="color: #C0C0C0" ID="star5" runat="server"></i>
+     </p>
+     <a href=""</center>
+ </form>
+    </div>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
 	    <div class="modal-content">
 	      <div class="modal-header">
@@ -121,6 +103,5 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-
 </body>
 </html>

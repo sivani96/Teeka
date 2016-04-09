@@ -37,9 +37,9 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="report.aspx">REPORT</a></li>
             <li><a href="userprofile.aspx">PROFILE</a></li>
-            <li><a href="#">VACCINE INFORMATION</a></li>
-            <li><a href="#">STAR BABY</a></li>
-            <li><a href="#">DASHBOARD</a></li>
+            <li><a href="info_log.aspx">VACCINE INFORMATION</a></li>
+            <li><a href="star.aspx">STAR BABY</a></li>
+            <li><a href="dashboard.aspx">DASHBOARD</a></li>
             <li><a href="logout.aspx">LOGOUT</a></li>
             <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
           </ul>
@@ -58,13 +58,27 @@
 	</div><!--  bluewrap -->
    <center> 
        <asp:GridView ID="GridView1" runat="server" BorderStyle="Solid" 
-           CssClass="col-lg-4" AutoGenerateEditButton="True">
+           CssClass="col-lg-4">
        </asp:GridView>
        <br />
        <br />
        <br />
-       <br /><br /><br /><br /><br /><br />
-       <asp:Button ID="Button1" runat="server" Text="Save" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <br />
+       <br />
+       <br />
+       <br /><br /><br />
+       <asp:Button ID="Button1" runat="server" Text="Save" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button 
+           ID="Button2" runat="server" Text="Add" />
+       &nbsp;&nbsp;
+       <br />
+       <asp:Label ID="Label2" runat="server" Text="Vaacination name" Visible="False"></asp:Label>
+       <asp:TextBox ID="TextBox1" runat="server" Visible="False"></asp:TextBox>
+       <br />
+       <asp:Label ID="Label1" runat="server" Text="Date of vaccination" 
+           Visible="False"></asp:Label>
+       <asp:TextBox ID="TextBox2" runat="server" type="date" Visible="False"></asp:TextBox>
+       <br />
+       <asp:Button ID="Button3" runat="server" Text="Confirm" Visible="False" />
        <br />
      </center>
     </form>

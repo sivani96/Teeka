@@ -20,7 +20,7 @@ Partial Class register
         'ucnt = cnt_cmd.ExecuteScalar()
         Dim tab_name = TextBox1.Text
         Dim crstr As String
-        crstr = "create table dbo." & tab_name & "(dov smalldatetime,vacc_name varchar(max),v_taken bit)"
+        crstr = "create table dbo." & tab_name & "(dov date,vacc_name varchar(max),v_taken bit,notified bit)"
         Dim cr_cmd As New SqlCommand(crstr, con)
         crcnt = cr_cmd.ExecuteScalar()
         con.Close()
@@ -29,20 +29,20 @@ Partial Class register
         con_vacc.Open()
         Dim rstr As String
         rstr = "begin tran;"
-        rstr += "insert into dbo." & tab_name & " values('" & dob & "','BCG OPV 0 Hep-B1',0);"
-        rstr += "insert into dbo." & tab_name & " values('" & dob.AddDays(42) & "','DTwP 1 IPV 1 Hep-B 2 Hib 1 Rotavirus 1 PCV 1',0);"
-        rstr += "insert into dbo." & tab_name & " values('" & dob.AddDays(70) & "','DTwP 2 IPV 2 Hib 2 Rotavirus 2 PCV 2',0);"
-        rstr += "insert into dbo." & tab_name & " values('" & dob.AddDays(98) & "','DTwP 3 IPV 3 Hib 3 Rotavirus 3 PCV 3',0);"
-        rstr += "insert into dbo." & tab_name & " values('" & dob.AddMonths(6) & "','OPV 1 Hep-B3',0);"
-        rstr += "insert into dbo." & tab_name & " values('" & dob.AddMonths(9) & "','OPV 2 MMR 1',0);"
-        rstr += "insert into dbo." & tab_name & " values('" & dob.AddMonths(10) & "','Typhoid Conjugate vaccine',0);"
-        rstr += "insert into dbo." & tab_name & " values('" & dob.AddMonths(12) & "','Hep-A 1 ',0);"
-        rstr += "insert into dbo." & tab_name & " values('" & dob.AddMonths(15) & "','MMR 2 Varicella 1 PCV booster',0);"
-        rstr += "insert into dbo." & tab_name & " values('" & dob.AddMonths(17) & "',' DTwP B1/DTaP B1  IPV B1, Hib B1',0);"
-        rstr += "insert into dbo." & tab_name & " values('" & dob.AddMonths(18) & "','Hep-A 2 ',0);"
-        rstr += "insert into dbo." & tab_name & " values('" & dob.AddYears(2) & "','Typhoid booster',0);"
-        rstr += "insert into dbo." & tab_name & " values('" & dob.AddYears(4) & "','DTwP B2/DTaP B2  OPV 3 Varicella 2 Typhoid booster',0);"
-        rstr += "insert into dbo." & tab_name & " values('" & dob.AddYears(10) & "','Tdap/Td  HPV ',0);"
+        rstr += "insert into dbo." & tab_name & " values('" & dob & "','BCG OPV 0 Hep-B1',0,0);"
+        rstr += "insert into dbo." & tab_name & " values('" & dob.AddDays(42) & "','DTwP 1 IPV 1 Hep-B 2 Hib 1 Rotavirus 1 PCV 1',0,0);"
+        rstr += "insert into dbo." & tab_name & " values('" & dob.AddDays(70) & "','DTwP 2 IPV 2 Hib 2 Rotavirus 2 PCV 2',0,0);"
+        rstr += "insert into dbo." & tab_name & " values('" & dob.AddDays(98) & "','DTwP 3 IPV 3 Hib 3 Rotavirus 3 PCV 3',0,0);"
+        rstr += "insert into dbo." & tab_name & " values('" & dob.AddMonths(6) & "','OPV 1 Hep-B3',0,0);"
+        rstr += "insert into dbo." & tab_name & " values('" & dob.AddMonths(9) & "','OPV 2 MMR 1',0,0);"
+        rstr += "insert into dbo." & tab_name & " values('" & dob.AddMonths(10) & "','Typhoid Conjugate vaccine',0,0);"
+        rstr += "insert into dbo." & tab_name & " values('" & dob.AddMonths(12) & "','Hep-A 1 ',0,0);"
+        rstr += "insert into dbo." & tab_name & " values('" & dob.AddMonths(15) & "','MMR 2 Varicella 1 PCV booster',0,0);"
+        rstr += "insert into dbo." & tab_name & " values('" & dob.AddMonths(17) & "',' DTwP B1/DTaP B1  IPV B1, Hib B1',0,0);"
+        rstr += "insert into dbo." & tab_name & " values('" & dob.AddMonths(18) & "','Hep-A 2 ',0,0);"
+        rstr += "insert into dbo." & tab_name & " values('" & dob.AddYears(2) & "','Typhoid booster',0,0);"
+        rstr += "insert into dbo." & tab_name & " values('" & dob.AddYears(4) & "','DTwP B2/DTaP B2  OPV 3 Varicella 2 Typhoid booster',0,0);"
+        rstr += "insert into dbo." & tab_name & " values('" & dob.AddYears(10) & "','Tdap/Td  HPV ',0,0);"
         rstr += "commit tran;"
         Dim rcnt As Integer
         Dim rep_cmd As New SqlCommand(rstr, con_vacc)
