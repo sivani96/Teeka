@@ -69,7 +69,7 @@
 				<p>(Mandatory)</p>
 				<p>
 					<i class="fa fa-circle-o"></i> Prevents:Diphtheria (upper respiratory illness), Pertussis (Whooping Cough) & Tetanus.<br/>
-					<i class="fa fa-circle-o"></i> Important Info: Info: There may be mild fever, pain & swelling at the injected site. <br/>
+					<i class="fa fa-circle-o"></i> Important Info: Info: There may be mild fever, pain &amp; swelling at the injected site. <br/>
 				</p>
 			</div><!-- col-lg-6 -->
 			<div class="col-lg-6">
@@ -98,7 +98,7 @@
                 <h4>HPV (Human Papilloma Virus)</h4>
 				<p>(Optional)</p>
 				<p>
-					<i class="fa fa-circle-o"></i>Prevents: Cervical Cancer & other genital cancers.<br/>
+					<i class="fa fa-circle-o"></i>Prevents: Cervical Cancer &amp; other genital cancers.<br/>
 					<i class="fa fa-circle-o"></i>Important Info: Only for girls.<br/>
 				</p>
 			</div>
@@ -195,7 +195,7 @@
 				<p>(Mandatory)</p>
 				<p>
 					<i class="fa fa-circle-o"></i> Prevents: Diphtheria (upper respiratory illness), Pertussis (Whooping Cough) & Tetanus.<br/>
-					<i class="fa fa-circle-o"></i> Important Info: There may be mild fever, pain & swelling at the injected site. <br/>
+					<i class="fa fa-circle-o"></i> Important Info: There may be mild fever, pain &amp; swelling at the injected site. <br/>
 				</p>
 			</div>
 		</div><!-- row -->
@@ -280,7 +280,7 @@
                 <h4>HPV (Human Papilloma Virus)  </h4>
 				<p>(Optional)</p>
 				<p>
-					<i class="fa fa-circle-o"></i> Prevents: Cervical Cancer & other genital cancers.<br/>
+					<i class="fa fa-circle-o"></i> Prevents: Cervical Cancer &amp; other genital cancers.<br/>
 					<i class="fa fa-circle-o"></i> Important Info: Only for girls.<br/>
 				</p>
 			</div><!-- col-lg-6 -->
@@ -461,7 +461,7 @@
 				<p>(Mandatory)</p>
 				<p>
 					<i class="fa fa-circle-o"></i> Prevents: Diphtheria (upper respiratory illness), Pertussis (Whooping Cough) & Tetanus.<br/>
-					<i class="fa fa-circle-o"></i> Important Info: There may be mild fever, pain & swelling at the injected site.<br/>
+					<i class="fa fa-circle-o"></i> Important Info: There may be mild fever, pain &amp; swelling at the injected site.<br/>
 				</p>
 			</div>
 		</div><!-- row -->
