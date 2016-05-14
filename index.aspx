@@ -75,13 +75,14 @@
 			<div class="col-lg-4">
 				<i class="fa fa-laptop"></i>
 				<h4>DASHBOARD</h4>
-				<p>Read the best articles from here. </p>
+				<p>Get the latest information about your child&#39;s healthcare. Nurture your baby under 
+                    guidelines of experienced people </p>
 			</div><!-- col-lg-4 -->
 
 			<div class="col-lg-4">
 				<i class="fa fa-star"></i>
 				<h4>STAR BABY</h4>
-				<p>Rate your baby!</p>
+                <p>Have fun like never before.</p>
 			</div><!-- col-lg-4 -->
 		</div><!-- row -->
 		<br>
@@ -149,13 +150,11 @@
 		        	<p>
 		        		teeka.notify@gmail.com<br/>
 		        	</p>
-		        	<!--div id="mapwrap">
-		<iframe height="300" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.es/maps?t=m&amp;ie=UTF8&amp;ll=52.752693,22.791016&amp;spn=67.34552,156.972656&amp;z=2&amp;output=embed"></iframe>
-					</div-->	
+		        	
 		        </div>
 	      </div>
 	      <div class="modal-footer">
-	        <!--button type="button" class="btn btn-danger" data-dismiss="modal">Save & Go</button-->
+	        
 	      </div>
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->

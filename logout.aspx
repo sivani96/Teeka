@@ -34,8 +34,8 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="report.aspx">REPORT</a></li>
-            <li><a href="userprofile.aspx">PROFILE</a></li>
+            <li class="#"><a href="report.aspx">REPORT</a></li>
+            <li><a href="#">PROFILE</a></li>
             <li><a href="#">VACCINE INFORMATION</a></li>
             <li><a href="#">STAR BABY</a></li>
             <li><a href="#">DASHBOARD</a></li>
@@ -73,13 +73,11 @@
 		        	<p>
 		        		teeka.notify@gmail.com<br/>
 		        	</p>
-		        	<!--div id="mapwrap">
-		<iframe height="300" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.es/maps?t=m&amp;ie=UTF8&amp;ll=52.752693,22.791016&amp;spn=67.34552,156.972656&amp;z=2&amp;output=embed"></iframe>
-					</div-->	
+		    
 		        </div>
 	      </div>
 	      <div class="modal-footer">
-	        <!--button type="button" class="btn btn-danger" data-dismiss="modal">Save & Go</button-->
+	        
 	      </div>
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->

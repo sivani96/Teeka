@@ -7,12 +7,13 @@ Partial Class userprofile
 
 
 
-
+    'Enabling text box
     Protected Sub Button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.Click
 
         TextBox4.ReadOnly = False
     End Sub
 
+    'Enabling text box
     Protected Sub Button2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button2.Click
         TextBox5.ReadOnly = False
     End Sub
@@ -71,7 +72,7 @@ Partial Class userprofile
                 Next
                 con.Close()
             Catch ex As Exception
-                MsgBox(ex.Message)
+                ' MsgBox(ex.Message)
             End Try
         End If
 
@@ -97,21 +98,21 @@ Partial Class userprofile
         Dim cmd1 As New SqlCommand(sstr, con)
         Dim cnt As Integer
         cnt = cmd1.ExecuteScalar()
-        MsgBox(cnt)
+        'MsgBox(cnt)
         Dim istr As String
         If cnt = 0 Then
             istr = "insert into user_info values('" & tab_name & "'," & CType(TextBox1.Text, Integer) & "," & CType(TextBox2.Text, Integer) & ",'" & TextBox3.Text & "')"
         Else
             istr = "begin tran;"
-            istr = "update user_info set height=" & CType(TextBox1.Text, Integer) & " where u_name='" & tab_name & "';"
+            istr += "update user_info set height=" & CType(TextBox1.Text, Integer) & " where u_name='" & tab_name & "';"
             istr += "update user_info set weight=" & CType(TextBox2.Text, Integer) & " where u_name='" & tab_name & "';"
             istr += "update user_info set other_info='" & TextBox1.Text & "' where u_name='" & tab_name & "';"
             istr += "commit tran;"
         End If
-        MsgBox(istr)
+        'MsgBox(istr)
         Dim cmd2 As New SqlCommand(istr, con)
         cnt = cmd2.ExecuteNonQuery()
-        MsgBox(cnt)
+        ' MsgBox(cnt)
         con.Close()
     End Sub
 End Class

@@ -46,7 +46,7 @@
             <li><a href="userprofile.aspx">PROFILE</a></li>
             <li class="active"><a href="info_log.aspx">VACCINE INFORMATION</a></li>
             <li><a href="star.aspx">STAR BABY</a></li>
-            <li><a href="#">DASHBOARD</a></li>
+            <li><a href="dashboard.aspx">DASHBOARD</a></li>
             <li><a href="logout.aspx">LOGOUT</a></li>
             <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
           </ul>
@@ -476,7 +476,7 @@
 		<div class="container">
 			<div class="row centered">
 				<div class="col-lg-8 col-lg-offset-2">
-					<p>Childhood vaccines are one of the great triumphs of modern medicine. Indeed, parents whose children are vaccinated no longer have to worry about their child's death or disability from whooping cough, polio, diphtheria, hepatitis, or a host of other infections.</p>
+					
 				    <p><right>&copy;Teeka</right></p>
                 </div>
 			</div><!-- row -->
@@ -499,14 +499,7 @@
 		        	<p>
 		              teeka.notify@gmail.com
 		        	</p>
-		        	<div id="mapwrap">
-		<iframe height="300" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.es/maps?t=m&amp;ie=UTF8&amp;ll=52.752693,22.791016&amp;spn=67.34552,156.972656&amp;z=2&amp;output=embed"></iframe>
-					</div>	
-		        </div>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-danger" data-dismiss="modal">Save & Go</button>
-	      </div>
+		        	
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->

@@ -59,26 +59,33 @@
  
     <center> <br>
     <table cellpadding="10%" cellspacing="20%">
-   <tr><td> <asp:Label ID="Label2" runat="server" Text="Username "></asp:Label></td>
+   <tr><td> <asp:Label ID="Label2" runat="server" Text="Username "></asp:Label>*</td>
    <td> <asp:TextBox ID="TextBox1" runat="server" Height="30px" Width="148px"></asp:TextBox></td>
        <td>  <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" 
             ControlToValidate="TextBox1" ErrorMessage="enter valid username" 
             ValidationExpression="\w+\d*" Display="Dynamic"></asp:RegularExpressionValidator>
 
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
-            ControlToValidate="TextBox1" Display="Dynamic" ErrorMessage="Enter username"></asp:RequiredFieldValidator></td></tr>
+            ControlToValidate="TextBox1" Display="Dynamic" ErrorMessage="Enter username"></asp:RequiredFieldValidator>
+           <asp:Label ID="Label7" runat="server" Text="Username already exists" 
+               Visible="False"></asp:Label>
+       </td></tr>
    
-    <tr><td><asp:Label ID="Label3" runat="server" Text="Password "></asp:Label></td>
+    <tr><td><asp:Label ID="Label3" runat="server" Text="Password "></asp:Label>*</td>
    <td> 
        <asp:TextBox ID="TextBox2" runat="server" Height="30px" Width="148px" 
             TextMode="Password"></asp:TextBox></td>
-       <td> <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" 
+       <td> 
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
+            ControlToValidate="TextBox2" Display="Dynamic" ErrorMessage="Enter Password"></asp:RequiredFieldValidator>
+           <asp:Label ID="Label8" runat="server" Text="Password already exists" 
+               Visible="False"></asp:Label>
+           <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" 
             ControlToValidate="TextBox2" ErrorMessage="Special charecters are not allowed" 
             ValidationExpression="\w+\d*"></asp:RegularExpressionValidator>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
-            ControlToValidate="TextBox2" Display="Dynamic" ErrorMessage="Enter Password"></asp:RequiredFieldValidator></td></tr>
+        </td></tr>
         
-      <tr><td>  <asp:Label ID="Label4" runat="server" Text="Email"></asp:Label></td>
+      <tr><td>  <asp:Label ID="Label4" runat="server" Text="Email"></asp:Label>&nbsp;*</td>
       <td>   <asp:TextBox ID="TextBox3" runat="server" Width="148px"></asp:TextBox></td>
         <td> <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" 
             ControlToValidate="TextBox3" Display="Dynamic" 
@@ -87,7 +94,7 @@
         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" 
             ControlToValidate="TextBox3" Display="Dynamic" ErrorMessage="Enter email id"></asp:RequiredFieldValidator></td></tr>
 
-       <tr><td>  <asp:Label ID="Label5" runat="server" Text="Contact number"></asp:Label></td>
+       <tr><td>  <asp:Label ID="Label5" runat="server" Text="Contact number"></asp:Label>&nbsp;*</td>
         <td><asp:TextBox ID="TextBox4" runat="server" Width="148px"></asp:TextBox></td>
         <td><asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" 
             ControlToValidate="TextBox4" Display="Dynamic" 
@@ -96,7 +103,7 @@
             ControlToValidate="TextBox4" Display="Dynamic" 
             ErrorMessage="enter contact number"></asp:RequiredFieldValidator></td></tr>
         
-       <tr><td>  <asp:Label ID="Label6" runat="server" Text="DOB"></asp:Label></td>
+       <tr><td>  <asp:Label ID="Label6" runat="server" Text="DOB"></asp:Label>&nbsp;*</td>
          <td><asp:TextBox ID="TextBox5" runat="server" type="date" Width="148px" /></td>
          <td><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
         ControlToValidate="TextBox5" Display="Dynamic" ErrorMessage="Enter dob"></asp:RequiredFieldValidator></td></tr>
@@ -130,13 +137,11 @@
 		        	<p>
 		        		teeka.notify@gmail.com<br/>
 		        	</p>
-		        	<!--div id="mapwrap">
-		<iframe height="300" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.es/maps?t=m&amp;ie=UTF8&amp;ll=52.752693,22.791016&amp;spn=67.34552,156.972656&amp;z=2&amp;output=embed"></iframe>
-					</div-->	
+		        	
 		        </div>
 	      </div>
 	      <div class="modal-footer">
-	        <!--button type="button" class="btn btn-danger" data-dismiss="modal">Save & Go</button-->
+	       
 	      </div>
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->
@@ -148,6 +153,12 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        *Required fields</p>
+    <p>
+        &nbsp;</p>
 
 </body>
 </html>

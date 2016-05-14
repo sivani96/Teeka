@@ -18,8 +18,10 @@ Partial Class index
                 Dim cmd As New SqlCommand(str, con)
                 Dim cnt, k As Integer
                 cnt = cmd.ExecuteScalar()
-                MsgBox(cnt)
-                'retrieving email ids
+                'MsgBox(cnt)
+
+
+                'retrieving usernames and email ids
                 str = "select u_name,email from user_table"
                 Dim cmd1 As New SqlCommand(str, con)
                 Dim rd As SqlDataReader
@@ -29,8 +31,8 @@ Partial Class index
                 Do While rd.Read()
                     eids(k) = rd("email")
                     user(k) = rd("u_name")
-                    MsgBox(eids(k))
-                    MsgBox(user(k))
+                    '  MsgBox(eids(k))
+                    ' MsgBox(user(k))
                     k = k + 1
                 Loop
                 con.Close()
@@ -42,12 +44,12 @@ Partial Class index
                 Dim d As DateTime
                 Dim n As Integer
                 While i <= cnt
-                    'For i = 1 To cnt
-                    MsgBox(i & " iteration")
+
+                    ' MsgBox(i & " iteration")
                     con.Open()
-                    'retrieving from one table
+                    'retrieving from one table in each iteration
                     str = "Select * from " & user(i - 1)
-                    MsgBox(str)
+                    'MsgBox(str)
                     Dim cmd2 As New SqlCommand(str, con)
                     Dim rd1 As SqlDataReader
                     rd1 = cmd2.ExecuteReader()
@@ -56,55 +58,64 @@ Partial Class index
                     Do While rd1.Read()
                         taken(l) = CType(rd1("v_taken"), Integer)
                         notified(l) = CType(rd1("notified"), Integer)
+
                         If CType(rd1("v_taken"), Integer) = 0 And CType(rd1("notified"), Integer) = 0 Then
-                            MsgBox("taken=0")
+                            ' MsgBox("taken=0")
+                            'User has not taken the vaccine and not notified
                             If Not DateDiff(DateInterval.Day, DateTime.Now, rd1("dov")) > 0 Then
+                                'Checking the current date with dov
                                 d = rd1("dov")
-                                MsgBox(d)
+                                ' MsgBox(d)
                                 n = l
+                                'storing index in n to make notified =1
+                                'call subroutine to send e-mail
                                 SendEmail(eids(i - 1), rd1("vacc_name"), rd1("dov").ToString())
                             End If
                         ElseIf notified(l) = 1 Then
-                            MsgBox("already notified")
+                            'MsgBox("already notified")
                         End If
                         l = l + 1
                     Loop
                     con.Close()
-                    ' Dim m As Integer
-                    'm = 0
-                    'While m <= 14
-                    'MsgBox("m:" & m)
+
+
+                    'making notified as 1
                     If taken(n) = 0 And notified(n) = 0 Then
-                        MsgBox("n check" & n)
-                        MsgBox(d)
+                        ' MsgBox("n check" & n)
+                        ' MsgBox(d)
+                        'checking for the retrived index
                         If Not DateDiff(DateInterval.Day, DateTime.Now, d) > 0 Then
-                            MsgBox("date check")
+                            ' MsgBox("date check")
                             con.Open()
                             Dim nstr As String
                             nstr = "Update " & user(i - 1) & " set notified=1 where dov='" & d & "'"
                             Dim cmd_not As New SqlCommand(nstr, con)
                             Dim j As Integer
                             j = cmd_not.ExecuteNonQuery()
-                            MsgBox(j)
+                            '  MsgBox(j)
                             con.Close()
                         End If
                     End If
-                    ' m = m + 1
-                    'End While
+                    'Once notified=1 the user will not recieve further notification for the particular vaccination
 
                     i = i + 1
-                    MsgBox(i)
+                    'MsgBox(i)
 
-                    'Next
                 End While
             Catch error_t As Exception
-                MsgBox(error_t.Message)
+                '  MsgBox(error_t.Message)
             End Try
         End If
     End Sub
 
+
+    'Subroutine for sending e-mail
     Public Sub SendEmail(ByVal id As String, ByVal msg As String, ByVal pending As String)
-        MsgBox("in send mail")
+        'MsgBox("in send mail")
+        'id is the recipient's email id
+        'msg contains the vaccination name
+        'pending contains the date
+
         Dim Smtp_Server As New SmtpClient
         Dim e_mail As New MailMessage()
         Smtp_Server.UseDefaultCredentials = False
@@ -119,7 +130,7 @@ Partial Class index
         e_mail.IsBodyHtml = False
         e_mail.Body = "Dear user, Your vaccination " & msg & "is due for/from " & pending
         Smtp_Server.Send(e_mail)
-        MsgBox("Mail Sent")
+        'MsgBox("Mail Sent")
     End Sub
 
 End Class

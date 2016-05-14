@@ -77,7 +77,7 @@
        <td><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td></tr>
        
        <tr><td>Any other information</td>
-       <td><asp:TextBox ID="TextBox3" runat="server" Height="48px" Width="148px"></asp:TextBox></td></tr>
+       <td><asp:TextBox ID="TextBox3" runat="server" Height="95px" Width="153px"></asp:TextBox></td></tr>
        </table></center><br />
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -103,13 +103,11 @@
 		        	<p>
 		        		teeka.notify@gmail.com<br/>
 		        	</p>
-		        	<!--div id="mapwrap">
-		<iframe height="300" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.es/maps?t=m&amp;ie=UTF8&amp;ll=52.752693,22.791016&amp;spn=67.34552,156.972656&amp;z=2&amp;output=embed"></iframe>
-					</div-->	
+		        		
 		        </div>
 	      </div>
 	      <div class="modal-footer">
-	        <!--button type="button" class="btn btn-danger" data-dismiss="modal">Save & Go</button-->
+
 	      </div>
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->

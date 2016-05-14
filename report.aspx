@@ -69,14 +69,23 @@
        <br /><br /><br />
        <asp:Button ID="Button1" runat="server" Text="Save" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button 
            ID="Button2" runat="server" Text="Add" />
-       &nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
        <br />
-       <asp:Label ID="Label2" runat="server" Text="Vaacination name" Visible="False"></asp:Label>
-       <asp:TextBox ID="TextBox1" runat="server" Visible="False"></asp:TextBox>
-       <br />
-       <asp:Label ID="Label1" runat="server" Text="Date of vaccination" 
-           Visible="False"></asp:Label>
-       <asp:TextBox ID="TextBox2" runat="server" type="date" Visible="False"></asp:TextBox>
+       <table cellpadding ="10%" cellspacing ="10%">
+
+       <tr><td><asp:Label ID="Label2" runat="server" Text="Vaacination name" Visible="False"></asp:Label></td>
+       <td><asp:TextBox ID="TextBox1" runat="server" Visible="False"></asp:TextBox></td>
+       <td><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
+           ControlToValidate="TextBox1" Display="Dynamic" 
+           ErrorMessage="Enter vaccination name" Visible="False"></asp:RequiredFieldValidator></td></tr>
+       
+      <tr><td> <asp:Label ID="Label1" runat="server" Text="Date of vaccination" 
+           Visible="False"></asp:Label></td>
+      <td> <asp:TextBox ID="TextBox2" runat="server" type="date" Visible="False"></asp:TextBox></td>
+      <td> <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
+           ControlToValidate="TextBox2" Display="Dynamic" 
+           ErrorMessage="Enter date of vaccination" Visible="False"></asp:RequiredFieldValidator></td></tr>
+       </table> 
        <br />
        <asp:Button ID="Button3" runat="server" Text="Confirm" Visible="False" />
        <br />
@@ -95,14 +104,11 @@
 		        	<p>We are available 24/7, so don't hesitate to contact us.</p>
 		        	<p>
 		        		teeka.notify@gmail.com<br/>
-		        	</p>
-		        	<!--div id="mapwrap">
-		<iframe height="300" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.es/maps?t=m&amp;ie=UTF8&amp;ll=52.752693,22.791016&amp;spn=67.34552,156.972656&amp;z=2&amp;output=embed"></iframe>
-					</div-->	
+		        	
 		        </div>
 	      </div>
 	      <div class="modal-footer">
-	        <!--button type="button" class="btn btn-danger" data-dismiss="modal">Save & Go</button-->
+	        
 	      </div>
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->

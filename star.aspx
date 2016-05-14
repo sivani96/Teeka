@@ -38,7 +38,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="report.aspx">REPORT</a></li>
             <li><a href="userprofile.aspx">PROFILE</a></li>
-            <li><a href="info_lof.aspx">VACCINE INFORMATION</a></li>
+            <li><a href="info_log.aspx">VACCINE INFORMATION</a></li>
             <li class="active"><a href="star.aspx">STAR BABY</a></li>
             <li><a href="dashboard.aspx">DASHBOARD</a></li>
             <li><a href="logout.aspx">LOGOUT</a></li>
@@ -63,12 +63,19 @@
      <p>&nbsp;</p>
      <p>
          <asp:Label ID="Label1" runat="server"></asp:Label>
+         </p>
+    <p>
          <i class="fa fa-star" style="color: #C0C0C0" ID="star1" runat="server"></i>
          <i class="fa fa-star" style="color: #C0C0C0" ID="star2" runat="server"></i>
          <i class="fa fa-star" style="color: #C0C0C0" ID="star3" runat="server"></i>
          <i class="fa fa-star" style="color: #C0C0C0" ID="star4" runat="server"></i>
          <i class="fa fa-star" style="color: #C0C0C0" ID="star5" runat="server"></i>
      </p>
+     <p>
+         <asp:Button ID="Button1" runat="server" Text="Game up!" />
+     </p>
+     <p>
+         &nbsp;</p>
      <a href=""</center>
  </form>
     </div>

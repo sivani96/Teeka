@@ -32,10 +32,8 @@ Partial Class login
                 End If
             End If
         Next
-        Response.Write("Invalid user")
+        Label4.Visible = True
     End Sub
 
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
-    End Sub
+   
 End Class

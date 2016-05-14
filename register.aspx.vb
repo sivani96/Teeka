@@ -2,22 +2,46 @@
 Partial Class register
     Inherits System.Web.UI.Page
 
-
-
-
     Protected Sub Button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.Click
         Dim dob As Date
         dob = Convert.ToDateTime(TextBox5.Text)
         Dim con As New SqlConnection("Data Source=WINDOWS-979J62U\sqlexpress;Initial Catalog=testteeka;Integrated Security=True;User=WINDOWS-979J62U\sivani;Password=")
+
         con.Open()
         Dim ustr As String
-        ustr = "insert into user_table values('" & TextBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "'," & CLng(TextBox4.Text) & ",'" & Convert.ToDateTime(TextBox5.Text) & "','" & RadioButtonList1.SelectedValue & "');"
-        ' = "select count(*) from user_table;"
+
+        'checking if username and password exist already
+        ustr = "Select count(*) from user_table where u_name='" & TextBox1.Text & "'"
+        Dim ucmd As New SqlCommand(ustr, con)
+        Dim ucnt As Integer
+        ucnt = ucmd.ExecuteScalar()
+        If ucnt > 0 Then
+            Label7.Visible = True
+            Exit Sub
+        End If
+        Label7.Visible = False
+
+        ustr = "Select count(*) from user_table where pwd='" & TextBox2.Text & "'"
+        Dim pcmd As New SqlCommand(ustr, con)
+        Dim pcnt As Integer
+        pcnt = pcmd.ExecuteScalar()
+        If pcnt > 0 Then
+            Label8.Visible = True
+            Exit Sub
+        End If
+        Label8.Visible = True
+
+        'inserting registered user in database
+        ustr = "begin tran;"
+        ustr += "insert into user_table values('" & TextBox1.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "'," & CLng(TextBox4.Text) & ",'" & Convert.ToDateTime(TextBox5.Text) & "','" & RadioButtonList1.SelectedValue & "');"
+        ustr += "create table dbo." & TextBox1.Text & "_taken(dov date,vacc_name varchar(max));"
+        ustr += "commit tran;"
+
         Dim udet_cmd As New SqlCommand(ustr, con)
-        'Dim cnt_cmd As New SqlCommand(cnstr, con)
         Dim i, crcnt As Integer
         i = udet_cmd.ExecuteNonQuery()
-        'ucnt = cnt_cmd.ExecuteScalar()
+
+        'creating a report table for new user
         Dim tab_name = TextBox1.Text
         Dim crstr As String
         crstr = "create table dbo." & tab_name & "(dov date,vacc_name varchar(max),v_taken bit,notified bit)"
@@ -25,6 +49,7 @@ Partial Class register
         crcnt = cr_cmd.ExecuteScalar()
         con.Close()
 
+        'entering values into the report table
         Dim con_vacc As New SqlConnection("Data Source=WINDOWS-979J62U\sqlexpress;Initial Catalog=testteeka;Integrated Security=True;User=WINDOWS-979J62U\sivani;Password=")
         con_vacc.Open()
         Dim rstr As String
@@ -48,11 +73,8 @@ Partial Class register
         Dim rep_cmd As New SqlCommand(rstr, con_vacc)
         rcnt = rep_cmd.ExecuteNonQuery()
         con_vacc.Close()
+
         Response.Redirect("login.aspx")
     End Sub
 
-    
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
-    End Sub
 End Class
